@@ -1,15 +1,47 @@
-html{
+html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-body{
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: serif;
+
+    @font-face {
+        font-family: 'DM Serif Display';
+        src: url(../fonts/DMSerifDisplay-Regular.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'Public Sans';
+        src: url(../fonts/PublicSans-Bold.ttf);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: 'Public Sans';
+        src: url(../fonts/PublicSans-Regular.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
 }
