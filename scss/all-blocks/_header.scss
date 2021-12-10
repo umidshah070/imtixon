@@ -5,7 +5,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: white;
+    
 
 
 
@@ -67,7 +67,7 @@ header {
 
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 715px) {
     header {
         position: relative;
         height: 10vh;
@@ -123,12 +123,11 @@ header {
 
         .navbar {
 
-            transition: all .5s ease-in-out;
+            // transition: all .5s ease-in-out;
             position: absolute;
             flex-direction: column;
-            // background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
             top: 100%;
-            left: 0;
+            right: 0;
             height: 90vh;
             padding: 20px;
 
